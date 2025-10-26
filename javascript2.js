@@ -1,0 +1,1 @@
+console.log("Hola desde javascript2.js");
