@@ -10,9 +10,9 @@ jobs:
     runs-on: ubuntu-latest
 
     env:
-      nombres: "TUS_NOMBRES"
-      apellidos: "TUS_APELLIDOS"
-      edad: "TU_EDAD"
+      nombres: "Hector_David"
+      apellidos: "Paredes_Garcia"
+      edad: "32"
       version_proyecto: "3.0"
 
     steps:
