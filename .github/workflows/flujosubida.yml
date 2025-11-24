@@ -36,3 +36,18 @@ jobs:
       - name: variables abiertas
         run: |
           echo "Versión del proyecto: $version_proyecto"
+
+      - name: Verificar secrets
+        run: |
+            if [ -z "${{ secrets.user }}" ]; then
+            echo "USER está vacío o no existe"
+            else
+            echo "USER está configurado correctamente"
+            fi
+
+            if [ -z "${{ secrets.password }}" ]; then
+            echo "PASSWORD está vacío o no existe"
+            else
+            echo "PASSWORD está configurado correctamente"
+            fi
+
